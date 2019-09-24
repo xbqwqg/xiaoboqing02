@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>v-bind上的使用</title>
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<font v-bind:color="color1">hello girl</font>
+			<font v-bind:color="color2">hello girl</font>
+		</div>
+	</body>
+	<script>
+		//view model
+		new Vue({
+			el:"#app",
+			data:{
+				color1:"red",
+				color2:"blue"
+			}
+		})
+	</script>
+</html>

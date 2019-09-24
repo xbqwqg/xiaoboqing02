@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>v-on:事件修饰符</title>
+
+		<script src="js/vuejs-2.5.16.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<form action="demo1.html" method="get" v-on:submit.prevent>
+				<input type="submit" value="submit">
+			</form>
+		</div>
+	</body>
+	<script>
+		//view model
+		new Vue({
+			el:"#app"
+		});
+		
+		
+	</script>
+
+</html>
